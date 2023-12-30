@@ -1,36 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# New Year's Eve Web Application
 
-## Getting Started
+## Overview
+This web application is designed to celebrate the New Year's Eve of 2024. It allows users to send personalized greeting cards with custom messages to their loved ones. The application features a countdown to the New Year and showcases an interactive and festive design.
 
-First, run the development server:
+## Features
+- **Countdown Timer**: Displays a countdown to New Year's Eve 2024.
+- **Greeting Card Creation**: Allows users to create and customize greeting cards.
+- **Responsive Design**: Ensures a great experience across various devices and screen sizes.
+- **Interactive UI**: Engaging user interface with animations and microinteractions.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Technology Stack
+- **Frontend**: Next.js
+- **Styling**: TailwindCSS, Shadcn.UI
+- **Deployment**: Vercel
