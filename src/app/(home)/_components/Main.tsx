@@ -27,7 +27,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden pb-16">
       <main className="flex min-h-[65vh] flex-col items-center justify-center space-y-12 overflow-hidden lg:min-h-[82vh]">
         <Image
           src="/Ellipse3.svg"
@@ -51,7 +51,7 @@ const Main = () => {
             alt="2024"
             className="absolute top-1/2 z-0 h-[22rem] -translate-y-1/2 lg:h-[45rem]"
           />
-          <div className="z-10">
+          <div className="z-10 text-center">
             <h1 className="font-lora text-5xl lg:text-8xl">Happy</h1>
             <h1 className="font-lora text-7xl lg:text-[9rem]">New</h1>
             <h1 className="font-lora text-6xl lg:text-9xl">Year</h1>
