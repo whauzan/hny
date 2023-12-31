@@ -76,7 +76,7 @@ const WishForm = () => {
                     checked={field.value === "public"}
                     onCheckedChange={(checked) => {
                       field.onChange(checked ? "public" : "private");
-                      form.setValue("recipient", "public");
+                      form.setValue("recipient", checked ? "public" : "");
                     }}
                   />
                 </FormControl>
