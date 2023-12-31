@@ -41,7 +41,11 @@ const URLModal = NiceModal.create(() => {
 
   return (
     <Dialog open={modal.visible}>
-      <DialogContent className="sm:max-w-md" ref={dialogRef} id="URLModal">
+      <DialogContent
+        className="text-gray-700 sm:max-w-md"
+        ref={dialogRef}
+        id="URLModal"
+      >
         <DialogHeader>
           <DialogTitle>Share link</DialogTitle>
           <DialogDescription>
@@ -53,7 +57,12 @@ const URLModal = NiceModal.create(() => {
             <Label htmlFor="link" className="sr-only">
               Link
             </Label>
-            <Input id="link" defaultValue={url} readOnly />
+            <Input
+              id="link"
+              defaultValue={url}
+              readOnly
+              className="text-gray-700"
+            />
           </div>
           <Button
             type="submit"
