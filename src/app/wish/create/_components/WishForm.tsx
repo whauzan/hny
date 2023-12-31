@@ -34,6 +34,7 @@ const WishForm = () => {
 
   async function onSubmit(data: z.infer<typeof WishSchema>) {
     setIsSubmitting(true);
+    console.log(data);
 
     try {
       const newWish = await createWish({
@@ -42,6 +43,8 @@ const WishForm = () => {
         type: data.type,
         wish: data.wish,
       });
+      console.log(newWish);
+
       if (newWish) {
         NiceModal.show("URLModal", newWish);
       }
@@ -73,6 +76,7 @@ const WishForm = () => {
                     checked={field.value === "public"}
                     onCheckedChange={(checked) => {
                       field.onChange(checked ? "public" : "private");
+                      form.setValue("recipient", "public");
                     }}
                   />
                 </FormControl>
