@@ -1,6 +1,7 @@
 "use client";
 
 import { TimeLeft, calculateTimeLeft } from "@/lib/utils";
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const CountDown = () => {
@@ -24,6 +25,11 @@ const CountDown = () => {
           </span>
         ))}
       </div>
+      <p>
+        Share the joy of the New Year by sending heartfelt wishes to your loved
+        ones.
+      </p>
+      <Link href="/wish/create">Share Wishes</Link>
     </div>
   );
 };
