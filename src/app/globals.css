@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+*,
+body {
+  @apply bg-[#0C121C] text-[#FEFEFE] font-quicksand;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
