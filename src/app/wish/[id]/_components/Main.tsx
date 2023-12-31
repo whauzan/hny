@@ -18,7 +18,7 @@ const Main = ({ id }: { id: string }) => {
   }, [id]);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <main className="flex min-h-[82vh] flex-col items-center justify-center space-y-12 overflow-hidden">
         <Image
           src="/Ellipse3.svg"

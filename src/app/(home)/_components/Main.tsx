@@ -27,7 +27,7 @@ const Main = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <main className="flex min-h-[65vh] flex-col items-center justify-center space-y-12 overflow-hidden lg:min-h-[82vh]">
         <Image
           src="/Ellipse3.svg"
