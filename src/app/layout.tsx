@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Lora, Quicksand } from "next/font/google";
 import "./globals.css";
 import React from "react";
 import Provider from "@/components/provider/Provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"], variable: "--font-lora" });
+const quicksand = Quicksand({
+  subsets: ["latin"],
+  variable: "--font-quicksand",
+});
 
 export const metadata: Metadata = {
   title: "Happy New Year 2024",
@@ -19,7 +23,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${lora.variable} ${quicksand.variable}`}>
         <Provider>{children}</Provider>
       </body>
     </html>

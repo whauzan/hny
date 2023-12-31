@@ -17,6 +17,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        lora: ["var(--font-lora)"],
+        quicksand: ["var(--font-quicksand)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
