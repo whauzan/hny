@@ -5,7 +5,7 @@ import WishForm from "./_components/WishForm";
 const Page = () => {
   return (
     <main className="flex min-h-screen items-center justify-center">
-      <Card className="min-w-96">
+      <Card className="min-w-80 lg:min-w-96">
         <CardHeader>
           <CardTitle>Share Your Wishes</CardTitle>
         </CardHeader>

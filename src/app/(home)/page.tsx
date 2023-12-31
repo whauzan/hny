@@ -12,7 +12,7 @@ export default function Home() {
     const checkTime = () => {
       const userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
       const now = moment().tz(userTimezone);
-      const newYeartime = moment.tz("2023-01-01T00:00:00", userTimezone);
+      const newYeartime = moment.tz("2024-01-01T00:00:00", userTimezone);
       const diff = newYeartime.diff(now);
 
       if (diff <= 0) {
