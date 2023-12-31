@@ -9,6 +9,7 @@ export async function createWish(params: CreateWishParams) {
     connect();
 
     const { recipient, sender, type, wish } = params;
+    console.log(params);
 
     const newWish = await Wish.create({
       recipient,

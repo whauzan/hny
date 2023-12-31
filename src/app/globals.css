@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
 body {
   @apply bg-[#0C121C] text-[#FEFEFE] font-quicksand;
 }
