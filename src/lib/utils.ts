@@ -1,4 +1,10 @@
+import { type ClassValue, clsx } from "clsx";
+import { twMerge } from "tailwind-merge";
 import moment from "moment-timezone";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
 
 export interface TimeLeft {
   days: number;
