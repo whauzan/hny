@@ -1,19 +1,21 @@
-import { Document, Schema, model, models } from "mongoose";
+import { Document, Model, Schema, model, models } from "mongoose";
 
 export interface IWish extends Document {
   sender: string;
   recipient: string;
   wish: string;
-  wishForAuthor: string;
+  type: "private" | "public";
 }
 
 const wishSchema = new Schema({
   sender: { type: String, required: true },
   recipient: { type: String, required: true },
   wish: { type: String, required: true },
-  wishForAuthor: { type: String },
+  type: { type: String, required: true },
 });
 
-const Wish = model<IWish>("Wish", wishSchema) || models.Wish;
+const Wish: Model<IWish> = models.Wish
+  ? models.Wish
+  : model<IWish>("Wish", wishSchema);
 
 export default Wish;

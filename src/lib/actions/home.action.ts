@@ -9,7 +9,14 @@ export async function getHome() {
 
     const wish = await Wish.find({ recipient: "Whauzan", sender: "Whauzan" });
 
-    return wish;
+    // Convert the Mongoose document to a plain JavaScript object
+    const wishObject = wish.map((w) => {
+      const obj = w.toObject();
+      delete obj.__v; // remove the __v property
+      return obj;
+    });
+
+    return wishObject;
   } catch (err: any) {
     console.log(err);
     throw err;
