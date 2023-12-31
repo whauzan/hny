@@ -25,47 +25,47 @@ const Main = ({ id }: { id: string }) => {
           width={1000}
           height={1000}
           alt="Ellips"
-          className="absolute right-[-20%] top-[-35%]"
+          className="absolute -right-1/2 top-[-15%] lg:right-[-20%] lg:top-[-35%]"
         />
         <Image
           src="/Ellipse4.svg"
           width={700}
           height={700}
           alt="Ellips"
-          className="absolute bottom-[-7%] left-[-15%]"
+          className="absolute -left-1/4 bottom-20 lg:bottom-[-7%] lg:left-[-15%]"
         />
-        <div className="relative flex w-[45rem] justify-center font-lora font-bold uppercase leading-none">
+        <div className="relative flex w-[22rem] justify-center font-lora font-bold uppercase leading-none lg:w-[45rem]">
           <Image
             src="/2024.png"
             width={1000}
             height={1000}
             alt="2024"
-            className="absolute top-1/2 z-0 h-[45rem] -translate-y-1/2"
+            className="absolute top-1/2 z-0 h-[22rem] -translate-y-1/2 lg:h-[45rem]"
           />
           <div className="z-10">
-            <h1 className="font-lora text-8xl">Happy</h1>
-            <h1 className="font-lora text-[9rem]">New</h1>
-            <h1 className="font-lora text-9xl">Year</h1>
+            <h1 className="font-lora text-5xl lg:text-8xl">Happy</h1>
+            <h1 className="font-lora text-7xl lg:text-[9rem]">New</h1>
+            <h1 className="font-lora text-6xl lg:text-9xl">Year</h1>
           </div>
           <Image
             src="/Star1.svg"
             width={50}
             height={50}
             alt="Star"
-            className="absolute -top-32 left-16"
+            className="absolute -top-20 left-16 lg:-top-32"
           />
           <Image
             src="/Star1.svg"
             width={50}
             height={50}
             alt="Star"
-            className="absolute -bottom-32 right-20"
+            className="absolute -bottom-20 right-20 lg:-bottom-32"
           />
         </div>
       </main>
       <div className="flex flex-col items-center justify-center gap-y-6">
-        <h2>You got a wish from someone!</h2>
-        <div className="w-[30rem] rounded-[20px] border-2 p-4">
+        <h2 className="z-10">You got a wish from someone!</h2>
+        <div className="z-10 w-72 rounded-[20px] border-2 p-4 lg:w-[30rem]">
           <h3 className="font-semibold">From: {wish?.sender}</h3>
           <h3 className="font-semibold">To: {wish?.recipient}</h3>
           <div className="p-2">
@@ -73,13 +73,13 @@ const Main = ({ id }: { id: string }) => {
           </div>
         </div>
       </div>
-      <div className="mt-32 flex flex-col items-center space-y-12">
-        <p className="text-xl font-semibold">
+      <div className="mt-12 flex flex-col items-center space-y-12">
+        <p className="w-9/12 text-center text-sm font-semibold md:w-full lg:text-xl">
           Share the joy of the New Year by sending heartfelt wishes to your
           loved ones.
         </p>
         <Link href="/wish/create">
-          <Button className="rounded-[20px] border-2 border-white/10 bg-gray-700/20 px-24 py-7 font-lora text-xl uppercase shadow-xl shadow-black backdrop-blur-xl">
+          <Button className="rounded-md border-2 border-white/10 bg-gray-700/20 px-12 py-7 font-lora text-base uppercase shadow-md shadow-black backdrop-blur-xl lg:rounded-[20px] lg:px-24 lg:text-xl lg:shadow-xl">
             Share Wishes
           </Button>
         </Link>

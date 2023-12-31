@@ -28,47 +28,47 @@ const Main = () => {
 
   return (
     <div className="relative">
-      <main className="flex min-h-[82vh] flex-col items-center justify-center space-y-12 overflow-hidden">
+      <main className="flex min-h-[65vh] flex-col items-center justify-center space-y-12 overflow-hidden lg:min-h-[82vh]">
         <Image
           src="/Ellipse3.svg"
           width={1000}
           height={1000}
           alt="Ellips"
-          className="absolute right-[-20%] top-[-35%]"
+          className="absolute -right-1/2 top-[-15%] lg:right-[-20%] lg:top-[-35%]"
         />
         <Image
           src="/Ellipse4.svg"
           width={700}
           height={700}
           alt="Ellips"
-          className="absolute bottom-[-7%] left-[-15%]"
+          className="absolute -left-1/4 bottom-20 lg:bottom-[-7%] lg:left-[-15%]"
         />
-        <div className="relative flex w-[45rem] justify-center font-lora font-bold uppercase leading-none">
+        <div className="relative flex w-[22rem] justify-center font-lora font-bold uppercase leading-none lg:w-[45rem]">
           <Image
             src="/2024.png"
             width={1000}
             height={1000}
             alt="2024"
-            className="absolute top-1/2 z-0 h-[45rem] -translate-y-1/2"
+            className="absolute top-1/2 z-0 h-[22rem] -translate-y-1/2 lg:h-[45rem]"
           />
           <div className="z-10">
-            <h1 className="font-lora text-8xl">Happy</h1>
-            <h1 className="font-lora text-[9rem]">New</h1>
-            <h1 className="font-lora text-9xl">Year</h1>
+            <h1 className="font-lora text-5xl lg:text-8xl">Happy</h1>
+            <h1 className="font-lora text-7xl lg:text-[9rem]">New</h1>
+            <h1 className="font-lora text-6xl lg:text-9xl">Year</h1>
           </div>
           <Image
             src="/Star1.svg"
             width={50}
             height={50}
             alt="Star"
-            className="absolute -top-32 left-16"
+            className="absolute -top-20 left-16 lg:-top-32"
           />
           <Image
             src="/Star1.svg"
             width={50}
             height={50}
             alt="Star"
-            className="absolute -bottom-32 right-20"
+            className="absolute -bottom-20 right-20 lg:-bottom-32"
           />
         </div>
       </main>
@@ -76,7 +76,7 @@ const Main = () => {
         <Carousel
           opts={{ align: "start", loop: true }}
           plugins={[Autoplay({ delay: 2000 })]}
-          className="w-full max-w-7xl"
+          className="w-full max-w-sm lg:max-w-7xl"
         >
           <CarouselContent className="">
             {wish.map((w) => (
@@ -98,13 +98,13 @@ const Main = () => {
           <CarouselNext className="h-14 w-14 border-none bg-gray-700/70 text-[#FEFEFE]" />
         </Carousel>
       </div>
-      <div className="flex flex-col items-center space-y-12">
-        <p className="text-xl font-semibold">
+      <div className="mt-12 flex flex-col items-center space-y-12">
+        <p className="w-9/12 text-center text-sm font-semibold md:w-full lg:text-xl">
           Share the joy of the New Year by sending heartfelt wishes to your
           loved ones.
         </p>
         <Link href="/wish/create">
-          <Button className="rounded-[20px] border-2 border-white/10 bg-gray-700/20 px-24 py-7 font-lora text-xl uppercase shadow-xl shadow-black backdrop-blur-xl">
+          <Button className="rounded-md border-2 border-white/10 bg-gray-700/20 px-12 py-7 font-lora text-base uppercase shadow-md shadow-black backdrop-blur-xl lg:rounded-[20px] lg:px-24 lg:text-xl lg:shadow-xl">
             Share Wishes
           </Button>
         </Link>
