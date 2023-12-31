@@ -1,11 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import moment from "moment-timezone";
-import CountDown from "../../components/shared/CountDown";
+import CountDown from "@/components/shared/CountDown";
+import moment from "moment";
+import React, { useEffect, useState } from "react";
 import Main from "./_components/Main";
 
-export default function Home() {
+const Page = ({ params }: { params: { id: string } }) => {
   const [showCountDown, setShowCountDown] = useState<boolean | null>(null);
 
   useEffect(() => {
@@ -35,5 +35,7 @@ export default function Home() {
     return null;
   }
 
-  return showCountDown ? <CountDown /> : <Main />;
-}
+  return showCountDown ? <CountDown /> : <Main id={params.id} />;
+};
+
+export default Page;
