@@ -41,14 +41,14 @@ const CountDown = () => {
           const strValue = String((timeLeft as any)[interval]).padStart(2, "0");
           return (
             <React.Fragment key={interval}>
-              <span className="flex h-10 w-10 items-center justify-center rounded-md border-2 border-white/10 bg-gray-700/20 shadow-md shadow-black backdrop-blur-xl lg:h-48 lg:w-48 lg:rounded-[20px] lg:text-[88px] lg:shadow-xl">
+              <span className="flex h-8 w-8 items-center justify-center rounded-md border-2 border-white/10 bg-gray-700/20 shadow-md shadow-black backdrop-blur-xl lg:h-24 lg:w-24 lg:rounded-[20px] lg:text-[44px] lg:shadow-xl">
                 {strValue[0]}
               </span>
-              <span className="flex h-10 w-10 items-center justify-center rounded-md border-2 border-white/10 bg-gray-700/20 shadow-md shadow-black backdrop-blur-xl lg:h-48 lg:w-48 lg:rounded-[20px] lg:text-[88px] lg:shadow-xl">
+              <span className="flex h-8 w-8 items-center justify-center rounded-md border-2 border-white/10 bg-gray-700/20 shadow-md shadow-black backdrop-blur-xl lg:h-24 lg:w-24 lg:rounded-[20px] lg:text-[44px] lg:shadow-xl">
                 {strValue[1]}
               </span>
               {i < Object.keys(timeLeft).length - 1 && (
-                <span className="lg:text-[88px]">:</span>
+                <span className="lg:text-[44px]">:</span>
               )}
             </React.Fragment>
           );
