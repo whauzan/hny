@@ -18,7 +18,7 @@ const Main = () => {
 
   useEffect(() => {
     const fetchWish = async () => {
-      const response = await fetch("https://hny-whauzan.vercel.app/api/home");
+      const response = await fetch("http://localhost:3000/api/home");
       const data = await response.json();
       setWish(data);
     };
@@ -45,7 +45,7 @@ const Main = () => {
         />
         <div className="relative flex w-[22rem] justify-center font-lora font-bold uppercase leading-none lg:w-[45rem]">
           <Image
-            src="/2024.png"
+            src="/2025.png"
             width={1000}
             height={1000}
             alt="2024"
