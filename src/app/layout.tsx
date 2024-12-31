@@ -11,9 +11,9 @@ const quicksand = Quicksand({
 });
 
 export const metadata: Metadata = {
-  title: "Happy New Year 2024",
+  title: "Happy New Year 2025",
   description:
-    "Welcome 2024 with our unique New Year's Eve web application! Create and send personalized greeting cards, enjoy a live countdown, and experience a festive, interactive celebration online.",
+    "Welcome 2025 with our unique New Year's Eve web application! Create and send personalized greeting cards, enjoy a live countdown, and experience a festive, interactive celebration online.",
 };
 
 export default function RootLayout({

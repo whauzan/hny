@@ -48,7 +48,7 @@ const Main = () => {
             src="/2025.png"
             width={1000}
             height={1000}
-            alt="2024"
+            alt="2025"
             className="absolute top-1/2 z-0 h-[22rem] -translate-y-1/2 lg:h-[45rem]"
           />
           <div className="z-10 text-center">
