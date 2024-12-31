@@ -18,7 +18,7 @@ const Main = () => {
 
   useEffect(() => {
     const fetchWish = async () => {
-      const response = await fetch("http://localhost:3000/api/home");
+      const response = await fetch("https://hny-whauzan.vercel.app/api/home");
       const data = await response.json();
       setWish(data);
     };

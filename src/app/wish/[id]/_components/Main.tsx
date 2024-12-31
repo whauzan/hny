@@ -9,7 +9,9 @@ const Main = ({ id }: { id: string }) => {
 
   useEffect(() => {
     const fetchWish = async () => {
-      const response = await fetch(`http://localhost:3000/api/wish/${id}`);
+      const response = await fetch(
+        `https://hny-whauzan.vercel.app/api/wish/${id}`,
+      );
       const data = await response.json();
       setWish(data);
     };
